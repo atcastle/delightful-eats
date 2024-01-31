@@ -1,1 +1,79 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;  /* Use your preferred font */
+}
+
+header {
+    background-color: #333; 
+    color: white;
+    padding: 0.5em 0; /* Reduced padding for a thinner bar */
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block; /* Keeps items in a row */
+    margin: 0 10px; /* Reduced spacing between items */
+    font-size: 14px; /* Adjust font-size if needed */
+}
+
+.hero {
+    /* background-image: url('your-hero-image.jpg'); Set your background image */
+    color: #e6e6e6;
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero img {
+    object-fit: cover;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly dark background */
+    padding: 20px;
+    border-radius: 5px;
+    z-index:1;
+    backdrop-filter: blur(5px);
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.column img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-tile {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+} 
